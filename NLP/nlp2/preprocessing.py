@@ -35,24 +35,3 @@ def remove_tags(text):
     html_tags_pattern = r"<.*?>"
 
     return re.sub(html_tags_pattern, "", text)
-
-
-
-# Combination of all functions
-def clean_text_pipeline(text, language="english"):
-    # Step 1: Remove URLs
-    text = remove_urls(text)
-    
-    # Step 2: Remove HTML tags
-    text = remove_tags(text)
-    
-    # Step 3: Remove punctuation & special characters
-    text = RemoveChars(text)
-    
-    # Step 4: Convert to lowercase
-    text = ToLower(text)
-    
-    # Step 5: Remove stopwords
-    text = remove_stopwords(text, language)
-    
-    return text
