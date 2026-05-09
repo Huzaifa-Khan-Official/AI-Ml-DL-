@@ -84,6 +84,8 @@ for catgorical in catgorical_values:
     print("\n")
 ```
 
+![Categorical Data Visualization](/DataSets/categorical_data_visualization.png)
+
 ---
 
 # 📈 Numerical Data Visualization
@@ -134,6 +136,8 @@ for num in num_values:
     # Show plots
     plt.show()
 ```
+
+![Numerical Data Visualization](/DataSets/numerical_data_visualization.png)
 
 ---
 
